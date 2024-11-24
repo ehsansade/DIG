@@ -6,7 +6,7 @@ streamlit
 streamlit_option_menu
 seaborn
 fuzzywuzzy
-re==2.2.1
+pip>=24.3.1
 numpy
 difflib
 
