@@ -3,12 +3,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 import seaborn as sns
-from fuzzywuzzy import process  # Ensure you install 'fuzzywuzzy'
+from fuzzywuzzy import process  
 import re
 import numpy as np
 from fuzzywuzzy import fuzz
 from difflib import SequenceMatcher
-
 
 selection_state=0
 question_counter=0
@@ -184,9 +183,9 @@ def detect_null_check(question):
 # Define categories for the dropdown
 categories = [
     " ","Sales Analytics", "Customer/User Analytics", "Financial Analytics",
-    "Marketing Analytics", "Service Analytics", "Game Analytics",
-    "Healthcare Analytics", "Logistics Analytics", 
-    "Social Media Analytics", "Risk Analytics"
+    "Marketing Analytics", "Service/Support Analytics", "Game Analytics",
+    "Healthcare/Medical Analytics", "Logistics/Supply Chain Analytics", 
+    "Social Media/Sentiment Analytics", "Risk/Fraud Analytics"
 ]
 
 # Initialize session state to store questions and responses
@@ -1365,9 +1364,7 @@ if uploaded_file:
                 if response:
                     st.write(response)
                     
-        
-                 
-                    
+                            
             elif column_name and stat_func:
                  #st.write(f"Performing **{stat_name}** on **{column_name}**...")
                  if group_column:
@@ -1409,9 +1406,3 @@ if uploaded_file:
         for entry in st.session_state.history:
             st.markdown(f"**Q:** {entry['question']}")
             st.markdown(f"**A:** {entry['response']}")
-
-
-       
-   
-
-        # Optional: Add logic to generate new charts based on user query
