@@ -573,7 +573,7 @@ if uploaded_file:
         
         selection_state=1
             
-    elif analytics_type == "Service Analytics":
+    elif analytics_type == "Service/Support Analytics":
        
 
         # Sample column name mapping for potential variations
@@ -800,7 +800,7 @@ if uploaded_file:
         selection_state=1 
     
     
-    elif analytics_type == "Healthcare Analytics":
+    elif analytics_type == "Healthcare/Medical Analytics":
        
 
         # Sample column name mapping for potential variations
@@ -900,7 +900,7 @@ if uploaded_file:
         
         selection_state=1 
     
-    elif analytics_type == "Logistics Analytics":
+    elif analytics_type == "Logistics/Supply Chain Analytics":
        
 
         # Sample column name mapping for potential variations
@@ -1006,7 +1006,7 @@ if uploaded_file:
         selection_state=1 
         
     
-    elif analytics_type == "Social Media Analytics":
+    elif analytics_type == "Social Media/Sentiment Analytics":
        
 
         # Sample column name mapping for potential variations
@@ -1118,7 +1118,7 @@ if uploaded_file:
         
         selection_state=1 
         
-    elif analytics_type == "Risk Analytics":
+    elif analytics_type == "Risk/Fraud Analytics":
        
 
         # Sample column name mapping for potential variations
