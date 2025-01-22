@@ -209,12 +209,12 @@ with st.sidebar.expander("How to Use the App", expanded=True):
          - **Customer/User Analytics**
          - **Financial Analytics**
          - **Marketing Analytics**
-         - **Service Analytics**
+         - **Service/Support Analytics**
          - **Game Analytics**
-         - **Healthcare Analytics**
-         - **Logistics Analytics**
-         - **Social Media Analytics**
-         - **Risk Analytics**
+         - **Healthcare/Medical Analytics**
+         - **Logistics/Supply Chain Analytics**
+         - **Social Media/Sentiment Analytics**
+         - **Risk/Fraud Analytics**
        - The app will search for column name matches in your dataset and generate key metrics and visualizations.
     3. **Ask Questions About Your Data**:
        - Use the input box to type questions about your data.
@@ -231,7 +231,7 @@ with st.sidebar.expander("How to Use the App", expanded=True):
     - **Q**: *column names?*
     - **A**: Column names: Date, Player_ID, Game_Session_ID, Game_Level, Session_Duration, In_Game_Purchases, Revenue, Retention_Rate, Player_Score, Highest_Score, Achievement_Unlocked, Date_year, Date_month, Date_day, Month_Year
     - **Q**: *averge game puchase?*
-    - **A**: `24.95`
+    - **A**: 24.95
     - **Q**: *pie plot max gam purchas per gme level.*
     - **A**: (Pie chart visualization generated.)
 
