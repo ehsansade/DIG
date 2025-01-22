@@ -192,7 +192,54 @@ categories = [
 if 'history' not in st.session_state:
     st.session_state.history = []
 # App title and file uploader
+st.set_page_config(page_title="NLP-Powered Data Insight Generator", layout="wide")
 st.title("NLP-Powered Data Insights Generator")
+
+# Instructions Section
+st.sidebar.header("Tutorial")
+with st.sidebar.expander("How to Use the App", expanded=True):
+    st.markdown("""
+    ### **Step-by-Step Instructions**
+    1. **Upload Your Data**:
+       - Click the **'Browse files'** button to upload a CSV file.
+       - The app will display the first five rows of your data to provide an overview.
+    2. **Select an Analytics Category**:
+       - Use the drop-down menu to choose one of the ten analytics categories based on your data type:
+         - **Sales Analytics**
+         - **Customer/User Analytics**
+         - **Financial Analytics**
+         - **Marketing Analytics**
+         - **Service Analytics**
+         - **Game Analytics**
+         - **Healthcare Analytics**
+         - **Logistics Analytics**
+         - **Social Media Analytics**
+         - **Risk Analytics**
+       - The app will search for column name matches in your dataset and generate key metrics and visualizations.
+    3. **Ask Questions About Your Data**:
+       - Use the input box to type questions about your data.
+       - The app supports queries such as:
+         - *"What is the average of column X?"*
+         - *"Plot column A versus column B."*
+         - *"Filter rows by date."*
+       - The app handles minor typos and provides visualizations or metrics based on your question.
+    4. **Iterate Questions**:
+       - After receiving an answer, a new input box will appear for additional questions.
+       - Type "no", "no more", "thank you", or "done" to end the session.
+
+    ### **Example Use Case: Game Analytics**
+    - **Q**: *column names?*
+    - **A**: Column names: Date, Player_ID, Game_Session_ID, Game_Level, Session_Duration, In_Game_Purchases, Revenue, Retention_Rate, Player_Score, Highest_Score, Achievement_Unlocked, Date_year, Date_month, Date_day, Month_Year
+    - **Q**: *averge game puchase?*
+    - **A**: `24.95`
+    - **Q**: *pie plot max gam purchas per gme level.*
+    - **A**: (Pie chart visualization generated.)
+
+    ### **Key Features**
+    - **Error Handling**: The app tolerates minor typos in questions.
+    - **Interactive Insights**: Generate multiple insights in a single session.
+    - **Visualization Options**: Automatic generation of charts and graphs.
+    """)
 uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
 
 # Dropdown to select analytics category
